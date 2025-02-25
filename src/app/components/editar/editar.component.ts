@@ -58,3 +58,4 @@ export class EditarComponent implements OnInit {
     this.router.navigate(['/listar']); // Redirige a la vista de listar
   }
 }
+//aqui añado un comentario para probar GitHub
