@@ -1,0 +1,39 @@
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.btn-sm {
+    margin: 0 5px;
+    
+}
+
+.alert {
+    font-size: 1.2rem;
+    padding: 15px;
+}
+.btn-secondary {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(92, 54, 150);
+  }
+.btn-success  {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

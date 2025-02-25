@@ -1,0 +1,48 @@
+
+  <div class="container mt-4">
+    <h2 class="text-center text-primary">Lista de Películas 🎥</h2>
+    
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a routerLink="/crear" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> 🎬 Agregar Película  </a>
+        
+        <a routerLink="/inicio" class="btn btn-secondary mt-3">🏠 Ir al Inicio</a>
+
+    </div>
+
+    <div class="table-responsive shadow p-3 bg-white rounded">
+        <table class="table table-hover table-bordered text-center" *ngIf="peliculas.length > 0; else sinDatos">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Director</th>
+                    <th>Año</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pelicula of peliculas">
+                    <td>{{ pelicula.id }}</td>
+                    <td>{{ pelicula.titulo }}</td>
+                    <td>{{ pelicula.director }}</td>
+                    <td>{{ pelicula.anio }}</td>
+                    <td>
+                        <a [routerLink]="['/editar', pelicula.id]" class="btn btn-warning btn-sm">
+                            <i class="bi bi-pencil-square"></i> Editar
+                        </a>
+                        <button (click)="eliminarPelicula(pelicula.id)" class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <ng-template #sinDatos>
+        <div class="alert alert-info text-center" role="alert">
+            🎬 No hay películas disponibles. ¡Agrega una nueva!
+        </div>
+    </ng-template>
+</div>

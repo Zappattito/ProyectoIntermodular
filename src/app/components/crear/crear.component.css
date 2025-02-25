@@ -1,0 +1,20 @@
+.container {
+    max-width: 600px; /* Limitar el ancho del contenedor */
+}
+
+h2 {
+    color: #9000ff; /* Color del encabezado */
+}
+
+.form-control {
+    border-radius: 0.25rem; /* Bordes redondeados en los inputs */
+}
+
+.btn {
+    width: 100%; /* Botones ocupan todo el ancho del contenedor */
+    color: aqua;
+}
+
+.text-danger {
+    font-size: 0.9rem; /* Tamaño de fuente de mensajes de error */
+}

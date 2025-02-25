@@ -1,0 +1,21 @@
+h1 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+p {
+    font-size: 2rem;
+    color: #ec1212;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-lg {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
