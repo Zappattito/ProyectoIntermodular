@@ -55,19 +55,9 @@ export class CrearComponent implements OnInit {
   cancelar(): void {
     this.router.navigate(['']); // Redirige a la vista de listar
   }
-  /*openSnackBar(message: string, action: string) {
-    this.snackBar.open(message, action, {
-      duration: 3000, // Duración en milisegundos
-    });
-  }  
-  onSubmit(): void {
-    if (this.form.valid) {
-      this.apiService.create(this.form.value).subscribe({
-        next: () => {
-          this.router.navigate(['']); // Redirigir a la lista después de crear
-        },
-        error: (err) => console.error('❌ Error al crear la película:', err)
-      });
-    }
-  }*/
+  volver(): void {
+    this.router.navigate(['/listar']); // Redirige a la vista de listar
+  }
 }
+
+ 
