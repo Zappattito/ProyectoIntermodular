@@ -1,0 +1,3 @@
+[submodule "back-peli"]
+	path = back-peli
+	url = https://github.com/Zappattito/back-peliculas
